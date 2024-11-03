@@ -16,6 +16,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip pytest
-    - name: Test with pytest
+    - name: Assignment 1 with pytest
       run: |
-        python test_validate.py
+        pytest test_validate.py
+    - name: Assignment 2 with pytest
+      run: |
+        pytest test_merge.py
